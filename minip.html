@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>planeIT-Finest task manger</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="minip.css">
+</head>
+<body>
+<p id="heading">
+  <h2>TASK MANAGER</h2>
+</p>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="#">planeIT</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">URGENT TASK</a></li>
+                  <li><a class="dropdown-item" href="#">DAILY TASK</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">SUPPORT</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Write for us...</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="card-container">
+      <div class="card1" style="width: 18rem;">
+        <img src="https://media.istockphoto.com/id/971346934/photo/kids-preparing-lunch.webp?a=1&b=1&s=612x612&w=0&k=20&c=xu4CI1IkfAG1MimcA3ghKW8WzzMSApQj_BZIMmPROaE=" class="card-img-top" alt="...">
+        <div class="card1-body">
+          <h5 class="card-title">Daily tasks</h5>
+          <p class="card-text">No hurry! but do it as get time</p>
+          <input type="text" id="taskInput1" placeholder="Add a new task..." />
+          <button id="addTaskButton1">Add</button>
+        </div>
+      </div>
+
+      <div class="card2" style="width: 18rem;">
+        <img src="https://media.istockphoto.com/id/1216309663/photo/close-up-of-urgent-word-on-notepad-on-table.webp?a=1&b=1&s=612x612&w=0&k=20&c=JNt8it3U_WEHRLVxIIA6ZWGhppif3GLwUmdcBckFJQA=" class="card-img-top" alt="...">
+        <div class="card2-body">
+          <h5 class="card-title">Urgent tasks</h5>
+          <p class="card-text">Finish it as soon as possible!</p>
+          <input type="text" id="taskInput2" placeholder="Add a new task..." />
+          <button id="addTaskButton2">Add</button>
+        </div>
+      </div>
+    </div>
+
+      
+  <!-- <div class="todo-app d-flex flex-column">
+    <h1>To-Do List</h1>
+    <div class="input-container">
+      <input type="text" id="taskInput" placeholder="Add a new task..." />
+      <button id="addTaskButton">Add</button>
+    </div>
+    <ul id="taskList"></ul>
+  </div> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="minip.js"></script>
+</body>
+</html>
